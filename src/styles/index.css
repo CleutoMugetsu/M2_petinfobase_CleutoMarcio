@@ -1,0 +1,143 @@
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.spinner {
+  margin: 4rem auto;
+
+  height: 20px;
+  width: 20px;
+
+  border-top: 2px solid black;
+  border-radius: 50%;
+
+  animation: spin 1s linear infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.login__section-first > h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  width: 391px;
+}
+
+.login__section-first > h2 > span {
+  color: var(--brand100);
+}
+
+.login__section-first > h4 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 320px;
+}
+
+.login__section-first > img {
+  width: 297px;
+}
+
+.login__section-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 479px;
+
+  position: relative;
+  top: 80px;
+
+  gap: 15px;
+  width: 391px;
+}
+
+.login__section-second {
+  border: 1px solid var(--gray600);
+  width: 368px;
+  height: 579px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+  top: 25px;
+
+  padding: 0px 30px;
+
+  gap: 30px;
+}
+
+.login__section-second > h3 {
+  position: absolute;
+  top: 40px;
+}
+
+.login__section-second > form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 262.38px;
+}
+
+.login__section-second > form > input {
+  background-color: var(--gray800);
+  border: 1px solid var(--gray600);
+  border-radius: 4px;
+
+  height: 44px;
+
+  font-family: "IBM Plex Sans";
+}
+
+.login__section-second > form > label {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 321px;
+}
+
+.login__button-acess {
+  position: relative;
+  top: 40px;
+
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 306px;
+}
+
+.login__register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.login__register > span {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+
+  text-align: center;
+}
+
+.login__register > p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}

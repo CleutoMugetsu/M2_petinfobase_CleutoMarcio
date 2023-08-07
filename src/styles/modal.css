@@ -1,0 +1,139 @@
+.modal__acess-post--div {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__create-post--buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 30px 0px 0px;
+}
+
+.modal__create-post--title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.modal__create-post--title > h1 {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+textarea,
+input {
+  font-family: "IBM Plex Sans";
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  padding: 10px;
+
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+label {
+  padding: 10px 0px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.modal__publish {
+  max-width: fit-content;
+}
+
+#modal__profile {
+  max-width: max-content;
+  margin-top: 100px;
+  margin-right: 100px;
+}
+
+.profile__username {
+  padding: 0px 10px;
+}
+
+.modal__title {
+  font-weight: 500;
+  font-size: 1.25rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard__name--modal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.post__description--modal {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #495057;
+}
+
+.modal__title-acess {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.modal__acess-post--div,
+.modal__edit-post--div,
+.modal__delete-post--div,
+.modal__create-post--div {
+  padding: 15px;
+}
+
+.modal__edit-post--span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__edit-post--textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__delete-post--span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal__delete-post--div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.modal__delete-post--warning {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.modal__delete-post--buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.profile__logout {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__logout {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

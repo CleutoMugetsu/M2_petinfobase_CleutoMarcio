@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/globalStyles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="../styles/buttons.css" />
+    <link rel="stylesheet" href="../styles/dashboard.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
+    <title>Petinfo</title>
+  </head>
+  <body>
+    <header>
+      <h1>PetInfo</h1>
+      <div classs="header__title">
+        <button id="button__create-post" class="confirm__button open__modal">
+          Criar publicação
+        </button>
+        <span class="img__div"> </span>
+      </div>
+
+      <dialog id="modal__profile">
+        <div class="modal__logout">
+          <div class="profile__logout">
+            <button class="modal__close close-cancel__button">X</button>
+          </div>
+          <button id="button__logout" class="close-cancel__button">
+            Log out
+          </button>
+        </div>
+      </dialog>
+
+      <dialog id="modal__create-post">
+        <div class="modal__acess-post--div">
+          <span class="modal__create-post--title">
+            <h1>Criando novo post</h1>
+            <button class="modal__close close-cancel__button">X</button>
+          </span>
+          <label for="title">Título do post</label>
+          <input
+            type="text"
+            name="title"
+            placeholder="Digite o título aqui..."
+            id="title"
+          />
+          <label for="post">Conteúdo do post</label>
+          <textarea
+            name="content"
+            id="post"
+            cols="20"
+            rows="5"
+            placeholder="Desenvolva o conteúdo do post aqui..."
+          ></textarea>
+          <span class="modal__create-post--buttons">
+            <button class="modal__close-cancel close-cancel__button">
+              Cancelar
+            </button>
+            <button class="modal__publish confirm__button" id="publish__button">
+              Publicar
+            </button>
+          </span>
+        </div>
+      </dialog>
+    </header>
+
+    <main class="dashboard container">
+      <span class="dashboard__span">
+        <h1 class="dashboard__title">Feed</h1>
+      </span>
+
+      <ul class="dashboard__posts"></ul>
+    </main>
+
+    <dialog class="modal__acess-post"></dialog>
+
+    <dialog class="modal__edit-post"></dialog>
+
+    <dialog class="modal__delete-post"></dialog>
+
+    <script type="module" src="../scripts/index.js"></script>
+    <script type="module" src="../scripts/toast.js"></script>
+    <script type="module" src="../scripts/modal.js"></script>
+    <script type="module" src="../scripts/dashboardRequests.js"></script>
+    <script type="module" src="../scripts/dashboard.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+</html>

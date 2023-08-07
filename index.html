@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/buttons.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+
+    <title>PetInfo</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="login__section-first">
+        <h1>PetInfo</h1>
+        <h2>
+          <span class="section-first__word">Amor</span> e
+          <span class="section-first__word">carinho</span> por meio do
+          conhecimento
+        </h2>
+        <h4>
+          Todas as informações para melhorar a vida do seu pet em um só lugar
+        </h4>
+        <img src="./src/assets/img-login.svg" />
+      </section>
+      <section class="login__section-second">
+        <span><h3>Login</h3></span>
+        <form class="login__form">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Digite seu e-mail"
+          />
+
+          <label for="password">Senha</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Digite sua senha"
+          />
+
+          <span>
+            <button class="confirm__button login__button-acess" type="submit">
+              Acessar
+            </button>
+            <section class="spinner hidden"></section>
+          </span>
+        </form>
+        <div class="login__register">
+          <p>Ainda não possui conta?</p>
+          <span>
+            Clicando no botão abaixo, você pode se cadastrar rapidamente
+          </span>
+          <button class="confirm__button login__button-register" type="submit">
+            Cadastrar
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script type="module" src="./src/scripts/index.js"></script>
+    <script type="module" src="./src/scripts/register.js"></script>
+    <script type="module" src="./src/scripts/toast.js"></script>
+  </body>
+</html>

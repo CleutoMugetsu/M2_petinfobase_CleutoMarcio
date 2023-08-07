@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/globalStyles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="../styles/buttons.css" />
+    <link rel="stylesheet" href="../styles/register.css" />
+
+    <title>PetInfo</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="register__section-first">
+        <span
+          ><h3>Cadastro</h3>
+          <button class="register__login-button">Voltar para o login</button>
+        </span>
+        <form class="register__form">
+          <label for="register__username">Usuário</label>
+          <input
+            type="text"
+            name="username"
+            id="register__username"
+            placeholder="Digite seu usuário"
+          />
+
+          <label for="register__email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="register__email"
+            placeholder="Digite seu e-mail"
+          />
+
+          <label for="register__avatar">Link da foto do perfil</label>
+          <input
+            type="text"
+            name="avatar"
+            id="register__avatar"
+            placeholder="Insira o link aqui"
+          />
+
+          <label for="register__password">Senha</label>
+          <input
+            type="password"
+            name="password"
+            id="register__password"
+            placeholder="Digite sua senha"
+          />
+
+          <div>
+            <button
+              class="confirm__button register__button-acess"
+              id="register__acess"
+              type="button"
+            >
+              Cadastrar
+            </button>
+            <button class="register__login-button">Voltar para o login</button>
+            <section class="spinner hidden"></section>
+          </div>
+        </form>
+      </section>
+
+      <section class="register__section-second">
+        <h1>PetInfo</h1>
+        <h2>Ooooooba!</h2>
+        <h4>
+          Agora vamos poder contribuir para o bem-estar do seu pet por meio do
+          conhecimento
+        </h4>
+        <img src="../assets/img-register.svg" />
+      </section>
+    </main>
+
+    <script type="module" src="../scripts/register.js"></script>
+    <script type="module" src="./src/scripts/toast.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+</html>
